@@ -2,6 +2,8 @@
 
 Python wrapper around Open Data from the [Czech Statistical Office (CZSO)](https://www.czso.cz/).
 
+The real credit goes to CZSO for publishing hundreds of machine-readable datasets with proper metadata and codelists.
+
 Inspired by the R package by Petr Bouchal: [petrbouchal/czso](https://github.com/petrbouchal/czso)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Marigold/czso/blob/main/demo.ipynb)
@@ -60,6 +62,14 @@ codelist = czso.get_codelist(100)
 - `dest_dir` — directory for caching downloaded files
 - `clean` — drop code columns, rename to friendly names (default `True`)
 - `include_metadata` — return `(DataFrame, metadata_dict)` tuple
+
+## AI coding skill
+
+This repo includes a skill that teaches AI coding agents how to use the `czso` package. Install it with:
+
+```bash
+npx skills add https://github.com/Marigold/czso --skill czso-data
+```
 
 ## Related projects
 
