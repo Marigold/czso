@@ -72,9 +72,7 @@ def get_dataset_metadata(dataset_id: str) -> dict:
     if not data.get("success"):
         error = data.get("error", {})
         msg = error.get("message", "Unknown error")
-        raise DatasetNotFoundError(
-            f"Dataset '{dataset_id}' not found: {msg}"
-        )
+        raise DatasetNotFoundError(f"Dataset '{dataset_id}' not found: {msg}")
     return data
 
 
