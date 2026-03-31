@@ -2,8 +2,6 @@
 #  Makefile
 #
 
-.PHONY: help test check lint format unittest clean clobber
-
 include default.mk
 
 SRC = czso tests
